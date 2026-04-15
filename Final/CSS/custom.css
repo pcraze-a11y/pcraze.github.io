@@ -1,0 +1,43 @@
+/* custom.css — overrides Bootstrap defaults for index.html.
+   Do NOT edit bootstrap.min.css directly; put overrides here. */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Override the default navbar-brand to make it pop a bit more */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Hero section — overrides default section spacing/background */
+.hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+}
+
+.hero .display-4 {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Soften Bootstrap card defaults */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Tweak the primary button hover state */
+.btn-primary:hover {
+    background-color: #084fc7;
+    border-color: #084fc7;
+}
+
+footer {
+    margin-top: 2rem;
+}
